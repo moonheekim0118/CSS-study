@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+            }
+            footer{
+                border-top:1px solid gray;
+                padding:20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+
+            .content nav{
+                border-right:1px solid gray;
+                flex-shrink: 0;
+            }
+            .content aside{
+                border-left:1px solid gray;
+                flex-shrink: 0;
+            }
+            @media(max-width:500px){
+                .content{
+                    flex-direction: column;
+                }
+                .content nav, .content aside{
+                     border-right:none;
+                     border-left:none;
+            }
+            }
+            nav,aside{
+                flex-shrink: 0;
+            }
+            main{
+                padding:10px;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="container">
+           <header>
+               <h1>hello world</h1>
+           </header>
+           <section class="content">
+               <nav>
+                   <ul>
+                       <li>html</li>
+                       <li>CSS</li>
+                       <li>javascript</li>
+                   </ul>
+               </nav>
+               <main>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id orci a ante sodales interdum. Mauris quis risus vel tellus condimentum iaculis in at leo. Mauris nibh nisi, dignissim at enim sit amet, rutrum pharetra magna. Sed euismod scelerisque lobortis. Sed nisi quam, commodo dapibus mauris eget, iaculis ornare odio. Donec scelerisque odio in dolor lacinia, nec pretium metus eleifend. Etiam sed tortor fermentum, maximus dolor at, efficitur tellus. Nam imperdiet accumsan mauris, suscipit sodales diam congue ut. In quis risus diam. Sed auctor blandit orci, eget volutpat metus ultrices ut. Pellentesque at magna a nunc aliquam hendrerit sed vitae velit. Proin at dapibus ligula.
+
+                Quisque sodales enim non tortor aliquam, at consectetur orci accumsan. Quisque rutrum sollicitudin ultricies. Cras rhoncus tristique libero quis auctor. Aliquam mattis sit amet mauris sit amet venenatis. Duis dapibus convallis tristique. Aenean aliquam lorem mollis magna fermentum, et dictum neque fermentum. Fusce in eros sagittis, hendrerit risus eu, aliquet massa. Donec feugiat tempus porttitor. Sed magna augue, cursus ut nulla nec, porta congue odio. Aliquam eu enim sit amet tellus lacinia gravida id id elit. Nulla facilisi. Pellentesque elit nunc, molestie consequat felis vel, tempor fermentum orci. Etiam finibus massa eu mi porta, sit amet mollis arcu euismod. Vivamus venenatis elit quis elementum gravida. Morbi at ultrices quam. Donec sit amet viverra ante. 
+               </main>
+               <aside>
+                   ad
+               </aside>
+           </section>
+           <footer>
+               <a>https://google.com 홈페이지</a>
+           </footer>
+       </div>
+    </body>
+</html>

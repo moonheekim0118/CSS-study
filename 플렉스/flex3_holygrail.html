@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+            }
+            footer{
+                border-top:1px solid gray;
+                padding:20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+            .content nav{
+                border-right:1px solid gray;
+                flex-shrink: 0;
+            }
+            .content aside{
+                border-left:1px solid gray;
+                flex-shrink: 0;
+            }
+            nav,aside{
+                flex-basis:150px;
+            }
+            main{
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="container">
+           <header>
+               <h1>hello wokrd</h1>
+           </header>
+           <section class="content">
+               <nav>
+                   <ul>
+                       <li>html</li>
+                       <li>CSS</li>
+                       <li>javascript</li>
+                   </ul>
+               </nav>
+               <main>
+                   this is moonhee's web site
+               </main>
+               <aside>
+                   ad
+               </aside>
+           </section>
+           <footer>
+               <a>https://google.com 홈페이지</a>
+           </footer>
+       </div>
+    </body>
+</html>
